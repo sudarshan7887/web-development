@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map,reduce,filter method</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is map reduce and filter method in Arrays</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi, fuga alias quaerat excepturi
+            dignissimos odio odit provident reprehenderit quo soluta inventore atque, debitis unde pariatur iusto, harum
+            eveniet explicabo fugiat nam. Exercitationem, ipsa.</p>
+
+            <h3>map method is used to create a new Array that cannot modify origional Array</h3>
+            <h3>Array filter method is used to print Array that given a specific condition,i,e cannot modify origional array </h3>
+            <h3>Array reduce method is used to print a value</h3>
+    </div>
+
+    <script>
+        //Array map method
+        console.log("This is Array map method");
+        let Arr = [23,45,67,78];
+        let a = Arr.map((value,index,Array)=>{      //create new Array that content isvalue,index,Array
+            console.log(value,index,Array);
+
+            return value + 1;
+        })
+        console.log(Arr);       //print origional Array
+        console.log(a);         //print new Array
+
+        //Array filter method
+        console.log("This is Array filter method");
+        let Arr2 = [23,12,3,8,5,9];
+        let b = Arr2.filter((value)=>{    
+            return value <10;       //This method print Array element which is less than 10
+        })
+        console.log(Arr2);          //print origiona Array
+        console.log(b);             //print new Array
+
+        //Array reduce method
+        console.log("This is Array reduce method");
+        let Arr3 = [1,2,4,5,2]
+
+        let newArr = Arr3.reduce((h1,h2)=>{
+            return h1 + h2;    //return 1 +2 = result +4=result+5=result +2 = 14
+        })
+        console.log(newArr);
+
+        //or
+
+        // const reduce_func = (h1,h2)=>{
+        //     return h1 + h2;
+
+        // }
+        // let c = Arr3.reduce(reduce_func);
+        // console.log(c);
+</script>
+</body>
+
+</html>

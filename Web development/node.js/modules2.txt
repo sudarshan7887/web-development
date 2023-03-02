@@ -1,0 +1,2 @@
+This is modules.js file
+writeFileSync function is used to write a content into file

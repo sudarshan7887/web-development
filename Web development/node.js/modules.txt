@@ -1,0 +1,4 @@
+This is a module.js file.
+readFilesync function is used to read a file content which is written in other file.
+
+I am Sudarshan

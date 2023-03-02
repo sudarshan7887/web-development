@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annimation and Key Frameworks</title>
+    <style>
+        .container {
+            background-color: yellowgreen;
+
+        }
+
+        .box {
+            width: 300px;
+            height: 250px;
+            background-color: blue;
+            position: relative;
+            animation-name: Sudarshan;
+            animation-duration:2s ;
+            animation-iteration-count: infinite;
+            /* animation-direction:normal; */
+            /* animation-fill-mode:forwards;
+            animation-timing-function: ease-in; */
+            /* animation-delay: 3s; */
+
+            /* animation-name: sudarshan1;
+            animation-duration: 8s;
+            animation-iteration-count: 1; */
+
+            /* upper properties in one line */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:sudarshan1 5s ease-in 1s 12 backwards;
+        }
+        @keyframes sudarshan1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%
+            {
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        @keyframes Sudarshan {
+            From{
+                width: 200px;
+            }
+            to{
+                width:1400px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+
+</html>

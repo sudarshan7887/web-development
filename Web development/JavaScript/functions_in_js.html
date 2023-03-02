@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function in javaScript</h1>
+    <script>
+
+        function avg(x,y){              //old method of defined a function
+            return (x+y)/2;
+        }
+
+       const sum = (p,q) =>{                //arrow function
+            return p+q;
+        }
+
+        const hello = () =>{
+            console.log("hello world!")
+        }
+
+        const hello2 = () =>{
+            return "Hii"
+        }
+        let a = 20;
+        let b = 30;
+
+        console.log("Average of a and b is:",avg(a,b));    //called avg function
+        console.log("sum of a and b is:",sum(a,b));       //called sum function
+        hello();                                         //called hello function
+
+        v = hello2();                                   //called hello2 function
+        console.log(v);
+
+
+    </script>
+</body>
+</html>

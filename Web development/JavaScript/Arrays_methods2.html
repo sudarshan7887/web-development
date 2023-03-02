@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Some Extra methods of Arrays</h2>
+    <script>
+        let num =[1,2,3,4,5,6,7,8,9]
+        console.log(num)
+
+        //delete method
+         delete num[0]
+         console.log(num)
+
+         //Concat method
+         let num1 = [23,45,66,76,32,12,45,6]
+        let num2 = [23,4,567,76,87,98,09,12,11]
+        let newArray = num1.concat(num2)
+        console.log(newArray)
+
+        //sort method
+        let num3 = [23,43,55,12,65,22,78,999,222]
+       // num3.sort()
+        console.log(num3.sort())    //sort by alphabetical order
+
+        //sort by asending and desending
+        let compare = (a,b)=>{
+           // return a-b              //asending order
+            return b-a                //desending order
+        }
+        num3.sort(compare)
+        console.log(num3)
+
+        //reverse method
+        num3.reverse()
+        console.log(num3)
+
+
+        //splice method
+        let num4 = [23,34,54,45,68,55,35,33]
+        num4.splice(2,3,1034,5455,6777)  //here search index 2 after index 2 delete 3 items and return 1034,5455....
+        console.log(num4)
+
+        //slice method =>create new array not midify previous array
+        
+        let num5 = [23,5,76,45,89,23,65,45,90,77]
+        let newNum= num5.slice(2)     //print starting with index 2 to end
+        let newNum2 = num5.slice(2,5)   //print starting with index 2 and ends with index 5
+        console.log(newNum)
+        console.log(newNum2)
+
+
+    </script>
+</body>
+</html>

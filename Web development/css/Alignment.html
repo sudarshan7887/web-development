@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+            /*used to text written in center */
+        }
+
+        .item {
+
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(115, 214, 115)
+        }
+
+        #fruit {
+            float: left;
+            width: 40%;
+        }
+
+        #computer {
+            float: left;
+            width: 40%;
+        }
+
+        #stationary {
+
+            /* float: left; */
+            width: 100%;
+        }
+
+        p,
+        h1 {
+            /* text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+         */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id='fruit' class='item'>
+            <h3>Fruit</h3>
+            <p id='fruitpara' class='para'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem
+                earum sunt. Sapiente quas reiciendis, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                voluptate ducimus, reiciendis nostrum quam asperiores aut. Consequatur adipisci aspernatur facere
+                perferendis animi!</p>
+        </div>
+        <div id='computer' class='item'>
+            <h3>Computer</h3>
+            <p id='computerpara' class='para'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem
+                earum sunt. Sapiente quas reiciendis, facere libero dignissimos, quis, ut recusandae pariatur sunt enim
+                rem magni. Voluptatum suscipit aliquid quibusdam exercitationem cumque deleniti.</p>
+        </div>
+        <div id='stationary' class='item'>
+            <h3>Stationary</h3>
+            <p id='stationarypara' class='para'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                voluptatem earum sunt. Sapiente quas reiciendis, facere libero dignissimos, quis, ut recusandae pariatur
+                sunt enim rem magni. Voluptatum suscipit aliquid quibusdam exercitationem cumque deleniti.</p>
+        </div>
+    </div>
+</body>
+
+</html>

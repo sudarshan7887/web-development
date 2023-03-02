@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Arrays method in JavaScript</h2>
+    <script>
+        let num = [12,23,45,65,7]
+        let b = num.toString();         //convert number into string
+        console.log(b ,typeof b);
+
+        let c = num.join(" and ");      //join 2 element with and
+        console.log(c)
+
+        let d = num.pop();     //pop last element 
+        console.log(num,d)          
+
+        let e = num.push(55)    //push element at the end    
+        console.log(num,e)
+
+        let f = num.shift();
+        console.log(num,f)      //delete first element
+
+        let g = num.unshift(88);    //Add 88 at the start
+        console.log(num,g);
+
+    </script>
+</body>
+</html>

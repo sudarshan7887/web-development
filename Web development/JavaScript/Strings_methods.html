@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>String methods in javaScript</h2>
+    <script>
+        let name = "Sudarshan"
+        let friend = "Sagar"
+        console.log(name.length)     //print length of String
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+        console.log(name.slice(2,6))    //printing string index no 2 to index number 6
+        console.log(name.slice(2))      //String starts with indx 2
+        console.log(name.concat(" is a friend of ",friend))     //concat 2 Strings 
+        //or
+        console.log("Sudarshan " + "Sagar")
+        console.log(friend.replace("Sag","pag"))                //replace String
+
+        let friend2 = "     Rushikesh       "
+        console.log(friend2.trim())       //remove spaces of starting and endings
+
+
+    </script>
+</body>
+</html>

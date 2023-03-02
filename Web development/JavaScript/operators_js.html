@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h2>This is Operators tutorial in js </h2>
+    
+    <script>
+        // Arithmatic operator in javaScript
+        let a = 45
+        let b = 4
+       console.log("a+b=",a+b)
+       console.log("a-b=",a-b)
+       console.log("a/b=",a/b)
+       console.log("a*b=",a*b)
+       console.log("a**b=",a**b)   //45*45*45*45 
+       console.log("a%b=",a%b)     //display remainder
+
+    //    console.log("a++",a++)
+    //    console.log("a",a)    //increment operator
+       //or
+       console.log("++a",++a)
+
+       console.log("--a",--a)   //decrement operator
+
+       //Assignment operator
+       
+       let assignment =1
+       a=8
+       console.log(a)
+        assignment +=5   //same as assignment = assignment+5
+        console.log("a=",a)
+        assignment -=5   //same as assignment = assignment-5
+        console.log("a=",a)
+        assignment /=5   //same as assignment = assignment/5
+        console.log("a=",a)
+        assignment *=5   //same as assignment = assignment*5
+        console.log("a=",a)
+        
+        //Comparison operators
+        let comp1 = 10
+        let comp2 =20
+
+        console.log("comp1 == comp2 is",comp1 == comp2)
+        console.log("comp1 != comp2 is",comp1 != comp2)
+        console.log("comp1 === comp2 is",comp1 === comp2)   //equal value and type
+        console.log("comp1 !== comp2 is",comp1 !== comp2)   //not equal value and type
+        console.log("comp1 > comp2 is",comp1 > comp2)
+        console.log("comp1 < comp2 is",comp1 < comp2)
+        console.log("comp1 >= comp2 is",comp1 >= comp2)
+        console.log("comp1 <= comp2 is",comp1 <= comp2)
+
+        //logical operators
+        let x = 5
+        let y = 6
+        console.log(x<y && x==5)
+        console.log(x>y || x==5)
+        console.log(!true)
+        console.log(!false)
+
+        let marks =prompt("Enter yoour marks");
+        marks = Number.parseInt(marks);
+        console.log("you are",(marks>40? "Pass" : "Failed"))     //ternory operator
+        
+    </script>
+</body>
+</html>

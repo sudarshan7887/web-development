@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Using Media Queries</title>
+    <style>
+        .container 
+        {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        navbar 
+        {
+            grid-area: navbar;
+
+        }
+
+        section 
+        {
+            grid-area: section;
+
+        }
+
+        aside 
+        {
+            grid-area: aside;
+
+        }
+
+        footer 
+        {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) 
+        {
+            body 
+            {
+                background-color: red;
+            }
+
+            .container 
+            {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside 
+            {
+                display: none;
+            }
+
+            span 
+            {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px)
+        {
+            body 
+            {
+                background-color: blue;
+            }
+
+            .container 
+            {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span 
+            {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) 
+        {
+            body
+            {
+                background-color: yellow;
+
+            }
+
+            .container
+             {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            
+        }
+
+        @media (min-width:800px) 
+        {
+            body 
+            {
+                background-color: green;
+            }
+        }
+
+        .bdr 
+        {
+            background-color: wheat;
+            border: 2px solid black;
+            padding: 10px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <navbar class="bdr">
+            <span>Home</span>
+            <span> About</span>
+            <span>Contact</span>
+            <span>Services</span>
+        </navbar>
+        <section class="bdr">
+            <h2>Lern CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae iste voluptate eligendi
+                corporis ipsum, quisquam ex ipsa officia, unde nisi veniam at fugit tempora fuga possimus eos a
+                laboriosam minus quae! Quae corporis eligendi laudantium asperiores modi facere sunt, ducimus
+                necessitatibus exercitationem odio deserunt deleniti inventore esse earum corrupti, minima maiores,
+                commodi molestiae sed placeat. Quas expedita consectetur harum quos, iusto soluta maiores, quisquam
+                veniam iste, ipsa accusamus repellendus provident earum amet recusandae dolorem eligendi natus rem
+                repellat vel officiis distinctio libero! Rerum at, a exercitationem tempore obcaecati modi, repellat
+                ratione laboriosam ipsum impedit, beatae perspiciatis delectus provident ab debitis suscipit nulla iste
+                illo quam quo voluptate. Nam, nesciunt alias eaque illum ipsa perspiciatis mollitia, delectus, id
+                obcaecati pariatur dolore saepe. Recusandae ad non velit nihil fugiat iure amet quasi sit. Molestias
+                perspiciatis, sequi nemo cumque quidem earum similique, explicabo odio aut velit voluptates incidunt
+                quam maiores aperiam. Sunt amet minus ex facere dignissimos eum nemo cupiditate, nisi optio corrupti
+                numquam rerum hic et iusto provident deserunt, tenetur nihil voluptate. Alias eius velit quasi eos enim
+                consectetur provident a omnis, illum ex libero deserunt. Ab unde, facilis quae, deleniti similique
+                soluta perferendis quaerat, minima numquam modi atque beatae eum!</p>
+        </section>
+        <aside class="bdr"> more about us </aside>
+        <footer class="bdr">Copyright Sudarshan 2022</footer>
+    </div>
+</body>
+
+</html>

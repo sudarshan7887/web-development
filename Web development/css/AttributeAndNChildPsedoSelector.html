@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Attribute and N child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text']
+
+        /*pseudo selector*/
+            {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        a[target]
+
+        /*pseudo selector*/
+            {
+            font-size: 20px;
+            color: violet;
+            text-decoration: none;
+            padding: 23px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        a[target='_self'] {
+            color: rgb(119, 119, 236);
+        }
+
+        /* this will applied css for third child */
+        li:nth-child(3) {
+            color: rgb(55, 0, 255);
+        }
+
+        li:nth-child(2n+0)
+
+        /* 2nd,4th,6th.... element color red*/
+            {
+            color: red;
+
+        }
+
+        li:nth-child(3n+3) {
+            color: rgb(87, 238, 67);
+        }
+
+        /* odd child */
+        li:nth-child(odd) {
+            color: rgb(231, 72, 61);
+            background-color: aquamarine;
+        }
+
+        /* even child */
+        li:nth-child(odd) {
+            color: rgb(34, 21, 226);
+            background-color: rgb(223, 226, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <h2> <a href="http://Google.com" target='_blank'>Go to google</a> </h2>
+    <h2> <a href="http://facebook.com" target='_self'>Go to facebook</a> </h2>
+    <div class="container">
+        <form action="" class="section-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="button" value='submit'>
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+            <li class="item" id="item11">item11</li>
+            <li class="item" id="item12">item12</li>
+            <li class="item" id="item13">item13</li>
+            <li class="item" id="item14">item14</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

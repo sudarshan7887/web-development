@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>flaxbox in CSS</title>
+</head>
+<style>
+    .container {
+
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        /* initializing a container as a flex box */
+        display: flex;
+        /* flex properties of a flex container */
+
+        /* flex-direction: row; */
+        /* by default*/
+
+        /* flex-direction: column;  
+        flex-direction: column-reverse;
+        flex-direction: row-reverse; */
+
+        /* default value of wrap is no wrap */
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse; */
+
+        /*this is short hand for flex direction and flex wrap*/
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify the content in horizontal direction */
+
+        /* justify-content: center;   */
+        /*all box in center position*/
+
+        /* justify-content: space-between;   */
+        /* space of all box same except starting and last*/
+
+        /* justify-content: space-evenly;     */
+        /*space of all box same*/
+
+        /* justify-content: space-around;     */
+        /*space of all box same starting and lasd last small space */
+
+        /* alignment properties */
+        /* justify the content invertical direction */
+
+        /* align-items: center;   */
+        /*vertically center*/
+
+        /* align-items: flex-end;    */
+        /* vertically bottom*/
+
+        /* align-items: flex-start;   */
+        /*(by default) vertically Top*/
+
+        /* align-items: stretch; */
+
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+    }
+    #item-1
+    {
+        /* flex properties for a flex items */
+
+        /* higher the order later it shows up in the container */
+        /* order:2; */
+
+        flex-grow: 2;
+
+
+    }
+    #item-2{
+        /* flex-grow: 3;
+        it increse the box size -ve no is not responsible  */
+
+        flex-basis: 320px;
+        /* when flex direction is set to row then flex basic will control width */
+        /* when flex direction is set to column then flex basic will control height */
+
+
+    }
+    #item-3
+    {
+        flex:2 2 230px;
+        align-self: flex-start;
+/* used to flex box start position */
+
+        align-self: flex-end;
+        /* used to flex box end position */
+
+        align-self: center;
+        /* used to flexbox in center */
+
+    }
+</style>
+
+<body>
+    <h3>This is a flexbox tutorial</h3>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+       <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>  -->
+    </div>
+</body>
+
+</html>

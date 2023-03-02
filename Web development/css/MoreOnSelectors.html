@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h3{
+            color: black;
+            background-color: rgb(248, 248, 91);
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* if p is right inside div then this css will applied */
+        /* div > p
+        {
+            text-align: center;
+            background-color: aqua;
+            color: black;
+
+        } */
+
+        /* if p is right after div i.e p is the next sibling of div */
+        div + p 
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is a more about on Selectors</h3>
+    <div class="container">
+       <div>
+           <p>This is a paragraph</p>
+       </div>
+       <p>This is another paragraph</p>
+    </div>
+    <p>This is a outer paragraph</p>
+</body>
+</html>

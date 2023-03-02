@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is a Conditional Expression Tutorial</h2>
+
+    <Script>
+        let a = prompt("Hey enter your age");
+/*
+//if else statement
+        if(a>0){
+            alert("This is a valid age");
+        }
+        else{
+            alert("This is not valid age");
+        }
+*/
+        if(a<0){
+            alert("invalid age");
+        }
+        else if(a<9)
+        {
+            alert("You are kid");
+        }
+        else if(a>9 && a<18)
+        {
+            alert("You are under 18");
+        }
+        else{
+            alert("You are younger");
+        }
+        console.log("you can", (a<18?  "not drive" : "drive"));   //ternory operator
+    </Script>
+</body>
+</html>
